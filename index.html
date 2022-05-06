@@ -2,6 +2,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <style>
         body {
             background-color: rgb(246, 248, 250);
@@ -13,7 +15,6 @@
         }
 
         ul.link-box {
-            transform: scale(3);
             list-style: none;
             margin: 0;
             padding-inline-start: 0;
@@ -26,7 +27,7 @@
         }
 
         ul.link-box>li:not(:first-child) {
-            padding-top: 10px;
+            margin-top: 4px;
         }
 
         a {
@@ -35,29 +36,32 @@
         }
 
         .listing {
-            padding: 5px;
+            padding: 4px;
         }
 
-        .listing:hover>span {
-            color: rgb(22, 108, 214);
+        .listing>* {
+            vertical-align: middle;
+        }
+
+        .listing>.icon {
+            transform: scale(1.5);
+            fill: rgb(88, 96, 106);
+        }
+
+        .listing>span {
+            font-size: 21.875px;
+            padding-left: 10px;
         }
 
         .listing:hover>.icon {
             fill: rgb(22, 108, 214);
         }
 
-        .listing>* {
-            vertical-align: bottom;
+        .listing:hover>span {
+            color: rgb(22, 108, 214);
+            text-decoration: underline;
         }
 
-        .listing>.icon {
-            fill: rgb(88, 96, 106);
-        }
-
-        .listing>span {
-            font-size: 1em;
-            padding-left: 5px;
-        }
     </style>
 </head>
 
